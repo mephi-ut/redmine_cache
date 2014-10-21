@@ -1,4 +1,4 @@
-<% cache(@issue) do %>
+<% cache({:issue => @issue, :relations => @relations}) do %>
 <%= render :partial => 'action_menu' %>
 
 <h2><%= issue_heading(@issue) %></h2>
